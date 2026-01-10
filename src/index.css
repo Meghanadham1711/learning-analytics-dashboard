@@ -1,0 +1,81 @@
+:root {
+  --bg: #f5f6fa;
+  --card-bg: #ffffff;
+  --text: #1a1a1a;
+}
+
+[data-theme="dark"] {
+  --bg: #0f172a;
+  --card-bg: #1e293b;
+  --text: #f8fafc;
+}
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.dashboard {
+  padding: 16px;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 12px;
+  padding: 12px;
+  background: var(--card-bg);
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.topbar button,
+.topbar select {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background: var(--bg);
+  color: var(--text);
+  cursor: pointer;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.card {
+  background: var(--card-bg);
+  border-radius: 10px;
+  padding: 14px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.card h4 {
+  margin: 0;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.card h2 {
+  margin: 6px 0 0;
+  font-size: 22px;
+}
+@media (max-width: 1024px) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .charts-row {
+    grid-template-columns: 1fr;
+  }
+}
+.card-icon {
+  font-size: 24px;
+  display: inline-block;
+  margin-bottom: 4px;
+}
+

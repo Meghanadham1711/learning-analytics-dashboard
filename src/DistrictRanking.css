@@ -1,0 +1,23 @@
+.pass-percent {
+  font-size: 12px;
+  margin-bottom: 6px;
+  color: #38bdf8;
+}
+.ranking-scroll{
+    display: flex;
+    justify-content: space-evenly;
+}
+.district-name{
+    background-color: #68b3d3;
+    padding: 10px;
+    border-radius: 5px 5px 0px 0px;
+    height: 25px;
+    width: 90px;
+    
+
+}
+.rank-box{
+    background-color: #144b63a1;
+    padding: 10px;
+    border-radius: 0px 0px 5px 5px;
+}
