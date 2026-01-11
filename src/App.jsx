@@ -29,13 +29,23 @@ function App() {
         district={district}
         setDistrict={setDistrict}
       />
-
-      <SummaryCards summary={data.summary} />
-      <CourseProgressChart data={data.courseProgress} />
-      <PassStatsChart data={data.passStats} />
-      <AssessmentDonut data={data.assessmentCompletion} />
+      <div className="summary-row">
+        <SummaryCards summary={data.summary} />
+      </div>
+      <div className="grid-2">
+        <CourseProgressChart data={data.courseProgress} />
+        <PassStatsChart data={data.passStats} />
+      </div>
+      <div className="grid-2">
+        <AssessmentDonut data={data.assessmentCompletion} />
       <GradeBreakdownPie data={data.gradeBreakdown} />
-      <DistrictRanking data={data.districtRanking} />
+      </div>
+      
+      
+      <div className="full-width">
+        <DistrictRanking data={data.districtRanking} />
+      </div>
+      
     </div>
   );
 }

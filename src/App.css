@@ -40,3 +40,52 @@
 .read-the-docs {
   color: #888;
 }
+.dashboard {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background: #0b1220;
+  min-height: 100vh;
+}
+
+/* Summary cards */
+.summary-row {
+  width: 100%;
+}
+
+/* Two-column grid for charts */
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+/* Full width sections */
+.full-width {
+  width: 100%;
+}
+
+/* Common card styling */
+.card {
+  background: #020617;
+  border-radius: 12px;
+  padding: 16px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Chart container */
+.chart-container {
+  flex: 1;
+  min-height: 260px;
+}
+@media (max-width: 1024px) {
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+

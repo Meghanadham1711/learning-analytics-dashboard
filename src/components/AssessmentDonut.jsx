@@ -16,7 +16,7 @@ export default function AssessmentDonut({ data }) {
     <div className="card">
       <h3>Average Assessment Score</h3>
 
-      <ResponsiveContainer width="100%" height={250}>
+      <ResponsiveContainer width="100%" height={280}>
         
         <PieChart>
           <Pie

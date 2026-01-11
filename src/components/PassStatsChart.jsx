@@ -20,21 +20,22 @@ export default function PassStatsChart({ data }) {
   return (
     <div className="card">
       <h3>Pass Percentage</h3>
-
-      <ResponsiveContainer width="100%" height={250}>
+<div className="chart-container">
+      <ResponsiveContainer width="100%" height={280}>
         {/* 👇 THIS IS WHERE layout="vertical" IS USED */}
         <BarChart data={chartData} layout="vertical">
           <XAxis type="number" />
           <YAxis type="category" dataKey="name" />
           <Tooltip />
 
-          <Bar dataKey="value" >\
+          <Bar dataKey="value" >
             {chartData.map((entry, index) => (
               <Cell key={index} fill={entry.color} />
             ))}
           </Bar>
         </BarChart>
       </ResponsiveContainer>
+    </div>
     </div>
   );
 }

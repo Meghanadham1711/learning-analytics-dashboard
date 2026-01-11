@@ -19,7 +19,7 @@ export default function GradeBreakdownPie({ data }) {
     <div className="card">
       <h3>Learners Details Breakdown</h3>
 
-      <ResponsiveContainer width="100%" height={250}>
+      <ResponsiveContainer width="100%" height={280}>
         <PieChart>
           <Pie
             data={data}
